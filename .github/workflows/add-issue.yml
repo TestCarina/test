@@ -1,0 +1,10 @@
+name: Add To GitHub projects
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  call-workflow: 
+    uses: TestCarina/test-global-action/.github/workflows/add-to-project.yml@main
