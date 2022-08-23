@@ -8,3 +8,4 @@ on:
 jobs:
   call-workflow: 
     uses: TestCarina/test-global-action/.github/workflows/add-to-project.yml@main
+    secrets: inherit
