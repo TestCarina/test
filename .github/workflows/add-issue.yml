@@ -8,4 +8,5 @@ on:
 jobs:
   call-workflow: 
     uses: TestCarina/test-global-action/.github/workflows/add-to-project.yml@main
-    secrets: inherit
+    secrets: 
+      github-token: ${{secrets.ADD_TO_PROJECT_PAT}}
